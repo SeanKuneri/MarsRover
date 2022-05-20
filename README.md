@@ -33,4 +33,6 @@ Expected Output:
 
 
 Structure of Solution
-![Architecture](https://user-images.githubusercontent.com/26204924/169615032-fce74dd6-ce34-41da-a6d0-0fec3a0d327b.png)
+
+![StructureOfSolution](https://user-images.githubusercontent.com/26204924/169616355-a6b5a9d7-9825-4f49-a1b6-428c5f9a6571.png)
+
