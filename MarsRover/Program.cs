@@ -13,11 +13,8 @@ namespace MarsRover
             var currentLocation = Console.ReadLine().Split(' ');
             var actions = Console.ReadLine().ToUpper();
 
-
             var services = new ServiceCollection();
-
-            ServiceCollector.AddCommonInfrastructure(services);
-
+            ServiceCollector.AddServices(services);
 
             var serviceProvider = services.BuildServiceProvider(true);
             var marsRoverService = serviceProvider.GetService<IMarsRoverService>();

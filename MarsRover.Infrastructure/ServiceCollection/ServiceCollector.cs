@@ -6,7 +6,7 @@ namespace MarsRover.Infrastructure.ServiceCollection
 {
     public static class ServiceCollector
     {
-        public static void AddCommonInfrastructure(this IServiceCollection serviceCollection)
+        public static void AddServices(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddSingleton<IMarsRoverService, MarsRoverService>(); 
             serviceCollection.AddSingleton<IOperatorService, OperatorService>();

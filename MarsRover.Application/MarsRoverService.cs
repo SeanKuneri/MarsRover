@@ -1,7 +1,7 @@
 ﻿using MarsRover.Application.Abstraction;
 using MarsRover.Common.Enumeration;
 using MarsRover.Domain.Entity;
-using MarsRoverProblemSolution.Repository.Command;
+using MarsRover.Command;
 using System;
 using System.Collections.Generic;
 
@@ -9,7 +9,6 @@ namespace MarsRover.Application
 {
     public class MarsRoverService : IMarsRoverService
     {
-
 
         public Coordinate MoveRover(string[] upperRightBoundryCoordinates, string[] currentLocation, string actions, IOperatorService operatorService)
         {

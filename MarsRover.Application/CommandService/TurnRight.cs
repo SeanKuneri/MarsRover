@@ -2,7 +2,7 @@
 using MarsRover.Common.Enumeration;
 using MarsRover.Domain.Entity;
 
-namespace MarsRoverProblemSolution.Repository.Command
+namespace MarsRover.Command
 {
     public class TurnRight : ICommand
     {

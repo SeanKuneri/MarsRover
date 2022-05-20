@@ -3,7 +3,7 @@ using MarsRover.Domain.Entity;
 using System;
 using System.Collections.Generic;
 
-namespace MarsRoverProblemSolution.Repository.Command
+namespace MarsRover.Command
 {
     public class MoveForward : ICommand
     {
