@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MarsRover.Application.Abstraction\MarsRover.Application.Abstraction.csproj" />
+    <ProjectReference Include="..\MarsRover.Common\MarsRover.Common.csproj" />
+    <ProjectReference Include="..\MarsRover.Domain\MarsRover.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -9,8 +9,8 @@ namespace MarsRover
     {
         public static void Main(string[] args)
         {
-            var upperRightBoundryCoordinates = Console.ReadLine().ToUpper(); //the lower-left coordinates are predefined as (0,0).
-            var currentLocation = Console.ReadLine().ToUpper();
+            var upperRightBoundryCoordinates = Console.ReadLine().Split(' '); //the lower-left coordinates are predefined as (0,0).
+            var currentLocation = Console.ReadLine().Split(' ');
             var actions = Console.ReadLine().ToUpper();
 
 
@@ -21,12 +21,13 @@ namespace MarsRover
 
             var serviceProvider = services.BuildServiceProvider(true);
             var marsRoverService = serviceProvider.GetService<IMarsRoverService>();
+            var operatorService = serviceProvider.GetService<IOperatorService>();
 
-
-
-            Console.WriteLine("upperRightBoundryCoordinates:" + upperRightBoundryCoordinates);
-            Console.WriteLine("currentLocation:" + currentLocation);
-            Console.WriteLine("actions:" + actions);
+            var coordinate = marsRoverService.MoveRover(upperRightBoundryCoordinates, currentLocation, actions, operatorService);
+            if (coordinate != null)
+                Console.WriteLine(coordinate.X + " " + coordinate.Y + " " + coordinate.Dir);
+            else
+                Console.WriteLine("error");
         }
     }
 }

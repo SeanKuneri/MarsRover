@@ -8,7 +8,8 @@ namespace MarsRover.Infrastructure.ServiceCollection
     {
         public static void AddCommonInfrastructure(this IServiceCollection serviceCollection)
         {
-            serviceCollection.AddSingleton<IMarsRoverService, MarsRoverService>();
+            serviceCollection.AddSingleton<IMarsRoverService, MarsRoverService>(); 
+            serviceCollection.AddSingleton<IOperatorService, OperatorService>();
 
         }
     }
