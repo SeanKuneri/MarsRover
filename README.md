@@ -30,3 +30,7 @@ Expected Output:
 1 3 N
 
 5 1 E
+
+
+Structure of Solution
+![Architecture](https://user-images.githubusercontent.com/26204924/169615032-fce74dd6-ce34-41da-a6d0-0fec3a0d327b.png)
