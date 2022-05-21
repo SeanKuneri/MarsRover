@@ -10,7 +10,14 @@ namespace MarsRover.Application
     public class MarsRoverService : IMarsRoverService
     {
 
-        public Coordinate MoveRover(string[] upperRightBoundryCoordinates, string[] currentLocation, string actions, IOperatorService operatorService)
+        private readonly IOperatorService operatorService;
+
+        public MarsRoverService()
+        {
+            operatorService = new OperatorService();
+        }
+
+        public Coordinate MoveRover(string[] upperRightBoundryCoordinates, string[] currentLocation, string actions)
         {
 
             var maxLst = new List<int>();

@@ -50,7 +50,7 @@ namespace MarsRover.Command
 
         private Coordinate CantMove()
         {
-            Console.WriteLine("Can't Move");
+            Console.WriteLine("Out of bound, can't move!");
             return null;
         }
     }

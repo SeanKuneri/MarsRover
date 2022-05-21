@@ -15,14 +15,8 @@ namespace MarsRover.Common.Enumeration
     {
         public static DirectionEnum GetEnumValue(string value)
         {
-            try
-            {
                 return (DirectionEnum)Enum.Parse(typeof(DirectionEnum), value);
-            }
-            catch
-            {
-                return default;
-            }
+       
         }
     }
 }

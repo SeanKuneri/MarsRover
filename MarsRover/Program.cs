@@ -18,9 +18,8 @@ namespace MarsRover
 
             var serviceProvider = services.BuildServiceProvider(true);
             var marsRoverService = serviceProvider.GetService<IMarsRoverService>();
-            var operatorService = serviceProvider.GetService<IOperatorService>();
 
-            var coordinate = marsRoverService.MoveRover(upperRightBoundryCoordinates, currentLocation, actions, operatorService);
+            var coordinate = marsRoverService.MoveRover(upperRightBoundryCoordinates, currentLocation, actions);
             if (coordinate != null)
                 Console.WriteLine(coordinate.X + " " + coordinate.Y + " " + coordinate.Dir);
             else
