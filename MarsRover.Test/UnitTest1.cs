@@ -1,11 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MarsRover;
 using MarsRover.Common.Enumeration;
 using MarsRover.Domain.Entity;
 using MarsRover.Application;
 using MarsRover.Application.Abstraction;
-using FakeItEasy;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace MarsRover.Test
 {
