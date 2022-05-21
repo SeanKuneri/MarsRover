@@ -29,7 +29,7 @@ namespace MarsRover.Application
             var coordinate = new Coordinate();
             coordinate.X = Convert.ToInt32(currentLocation[0]);
             coordinate.Y = Convert.ToInt32(currentLocation[1]);
-            coordinate.Dir = EnumExtensions.GetEnumValue(currentLocation[2]);
+            coordinate.Direction = EnumExtensions.GetEnumValue(currentLocation[2]);
             ICommand command;
 
             foreach (var dir in actions)
@@ -56,7 +56,7 @@ namespace MarsRover.Application
                 if (operationResult == null)
                     return null;
 
-                coordinate.Dir = operationResult.Dir;
+                coordinate.Direction = operationResult.Direction;
                 coordinate.X = operationResult.X;
                 coordinate.Y = operationResult.Y;
             }

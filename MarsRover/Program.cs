@@ -21,7 +21,7 @@ namespace MarsRover
 
             var coordinate = marsRoverService.MoveRover(upperRightBoundryCoordinates, currentLocation, actions);
             if (coordinate != null)
-                Console.WriteLine(coordinate.X + " " + coordinate.Y + " " + coordinate.Dir);
+                Console.WriteLine(coordinate.X + " " + coordinate.Y + " " + coordinate.Direction);
             else
                 Console.WriteLine("error");
         }

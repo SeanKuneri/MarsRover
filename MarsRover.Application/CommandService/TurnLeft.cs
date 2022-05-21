@@ -10,21 +10,21 @@ namespace MarsRover.Command
 
         public Coordinate Execute(Coordinate coordinates)
         {
-            if (coordinates.Dir == DirectionEnum.N)
+            if (coordinates.Direction == DirectionEnum.N)
             {
-                coordinates.Dir = DirectionEnum.W;
+                coordinates.Direction = DirectionEnum.W;
             }
-            else if (coordinates.Dir == DirectionEnum.W)
+            else if (coordinates.Direction == DirectionEnum.W)
             {
-                coordinates.Dir = DirectionEnum.S;
+                coordinates.Direction = DirectionEnum.S;
             }
-            else if (coordinates.Dir == DirectionEnum.S)
+            else if (coordinates.Direction == DirectionEnum.S)
             {
-                coordinates.Dir = DirectionEnum.E;
+                coordinates.Direction = DirectionEnum.E;
             }
-            else if (coordinates.Dir == DirectionEnum.E)
+            else if (coordinates.Direction == DirectionEnum.E)
             {
-                coordinates.Dir = DirectionEnum.N;
+                coordinates.Direction = DirectionEnum.N;
             }
             return coordinates;
         }

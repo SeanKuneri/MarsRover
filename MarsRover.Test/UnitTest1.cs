@@ -26,7 +26,7 @@ namespace MarsRover.Test
 
             coordinate.X = 1;
             coordinate.Y = 2;
-            coordinate.Dir = DirectionEnum.N;
+            coordinate.Direction = DirectionEnum.N;
 
             string [] upperRightBoundryCoordinates = { "5", "5" };
             string[] currentLocation = { "1", "2", "N" };
@@ -34,7 +34,7 @@ namespace MarsRover.Test
 
             var operationResult = marsRoverService.MoveRover(upperRightBoundryCoordinates, currentLocation, actions);
 
-            var actualOutput = $"{operationResult.X} {operationResult.Y} {operationResult.Dir}";
+            var actualOutput = $"{operationResult.X} {operationResult.Y} {operationResult.Direction}";
             var expectedOutput = "1 3 N";
 
             Assert.AreEqual(expectedOutput, actualOutput);
@@ -46,7 +46,7 @@ namespace MarsRover.Test
             var coordinate = new Coordinate();
             coordinate.X = 3;
             coordinate.Y = 3;
-            coordinate.Dir = DirectionEnum.N;
+            coordinate.Direction = DirectionEnum.N;
 
             string[] currentLocation = { "3", "3", "E" };
             string[] upperRightBoundryCoordinates = { "5", "5" };
@@ -54,7 +54,7 @@ namespace MarsRover.Test
 
             var operationResult = marsRoverService.MoveRover(upperRightBoundryCoordinates, currentLocation, actions);
 
-            var actualOutput = $"{operationResult.X} {operationResult.Y} {operationResult.Dir}";
+            var actualOutput = $"{operationResult.X} {operationResult.Y} {operationResult.Direction}";
             var expectedOutput = "5 1 E";
 
             Assert.AreEqual(expectedOutput, actualOutput);

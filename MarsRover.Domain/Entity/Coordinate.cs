@@ -10,6 +10,6 @@ namespace MarsRover.Domain.Entity
 
         public int Y { get; set; }
 
-        public DirectionEnum Dir { get; set; }
+        public DirectionEnum Direction { get; set; }
     }
 }
