@@ -58,9 +58,9 @@ namespace MarsRover.Test
         [TestMethod]
         public void TestScanrioForInput2()
         {
-            var services = new ServiceCollection();
-            var _serviceProvider = services.BuildServiceProvider(true);
-            var command = _serviceProvider.GetService<ICommand>();
+            //var services = new ServiceCollection();
+            //var _serviceProvider = services.BuildServiceProvider(true);
+            //var command = _serviceProvider.GetService<ICommand>();
 
             var coordinate = new Coordinate();
             coordinate.X = 3;
