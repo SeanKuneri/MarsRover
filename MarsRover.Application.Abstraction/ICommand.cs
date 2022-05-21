@@ -1,5 +1,7 @@
 ﻿
-namespace MarsRover.Domain.Entity
+using MarsRover.Domain.Entity;
+
+namespace MarsRover.Application.Abstraction
 {
     public interface ICommand
     {

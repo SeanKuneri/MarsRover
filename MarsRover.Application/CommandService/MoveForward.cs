@@ -1,4 +1,5 @@
-﻿using MarsRover.Common.Enumeration;
+﻿using MarsRover.Application.Abstraction;
+using MarsRover.Common.Enumeration;
 using MarsRover.Domain.Entity;
 using System;
 using System.Collections.Generic;
